@@ -1,77 +1,72 @@
-This is a repository for a Amazon Green: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
+# AmazonGreen Admin Panel
 
-Key Features:
+Welcome to the AmazonGreen Admin Panel repository! This repository is dedicated to managing the AmazonGreen platform's administrative functions efficiently. Below are the key details and features of our AmazonGreen Admin Panel.
 
-- We will be using Shadcn UI for the Admin!
-- Our admin dashboard is going to serve as both CMS, Admin and API!
-- You will be able to control mulitple vendors / stores through this single CMS! (For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually!)
-- You will be able to create, update and delete categories!
-- You will be able to create, update and delete products!
-- You will be able to upload multiple images for products, and change them whenever you want!
-- You will be able to create, update and delete filters such as "Color" and "Size", and then match them in the "Product" creation form.
-- You will be able to create, update and delete "Billboards" which are these big texts on top of the page. You will be able to attach them to a single category, or use them standalone (Our Admin generates API for all of those cases!)
-- You will be able to Search through all categories, products, sizes, colors, billboards with included pagination!
-- You will be able to control which products are "featured" so they show on the homepage!
-- You will be able to see your orders, sales, etc.
-- You will be able to see graphs of your revenue etc.
-- You will learn Clerk Authentication!
-- Order creation
-- Stripe checkout
-- Stripe webhooks
-- MySQL + Prisma + PlanetScale
+## Project Details
 
-### Prerequisites
+This repository is developed using the following technologies:
 
-**Node version 14.x**
+- *Next.js 13 App Router*
+- *React*
+- *Tailwind CSS*
+- *Prisma*
+- *MySQL*
 
-### Install packages
+## Key Features
 
-```shell
-npm i
-```
+Our AmazonGreen Admin Panel provides a comprehensive set of tools and functionalities for managing the platform effectively:
 
-### Setup .env file
+- *Shadcn UI for the Admin:* A user-friendly and visually appealing admin interface powered by Shadcn UI.
+- *All-in-One CMS, Admin, and API:* Seamlessly integrates Content Management System (CMS), administration tools, and API functionalities.
+- *Multi-Vendor Support:* Control multiple vendors and stores through a unified CMS. Manage diverse stores like "Shoe Store," "Laptop Store," and "Suit Store" individually, with automatic generation of API routes for each.
+- *Category Management:* Create, update, and delete categories effortlessly.
+- *Product Management:* Efficiently manage products by creating, updating, and deleting them.
+- *Image Management:* Upload multiple product images and modify them as needed.
+- *Filter Creation:* Create, update, and delete filters such as "Color" and "Size" to match products in the creation form.
+- *Billboard Management:* Create, update, and delete billboards – prominent texts displayed on top of pages. Attach them to specific categories or use them standalone, with API generation for all scenarios.
+- *Search and Pagination:* Easily search through categories, products, sizes, colors, and billboards with included pagination.
+- *Featured Products:* Control which products are showcased as "featured," ensuring they appear on the homepage.
+- *Order and Sales Monitoring:* View and manage orders and sales conveniently.
+- *Revenue Graphs:* Visualize revenue data through graphs, gaining insights into business performance.
+- *Clerk Authentication:* Learn and implement Clerk Authentication for enhanced security.
+- *Order Creation:* Efficient order creation process for seamless transactions.
+- *Stripe Checkout and Webhooks:* Implement Stripe checkout and handle Stripe webhooks for payment processing.
+- *MySQL + Prisma + PlanetScale:* Utilize a robust stack featuring MySQL, Prisma, and PlanetScale for efficient database management.
 
+## Prerequisites
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+Ensure you have the following prerequisites installed:
 
-# This was inserted by `prisma init`:
-# Environment variables declared in this file are automatically made available to Prisma.
-# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+- Node version 14.x
 
-# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+## Setup Instructions
 
-DATABASE_URL=''
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
-STRIPE_API_KEY=
-FRONTEND_STORE_URL=http://localhost:3001
-STRIPE_WEBHOOK_SECRET=
-```
+1. *Install Packages:*
+   
+   npm install
+   
 
-### Connect to PlanetScale and Push Prisma
-```shell
-npx prisma generate
-npx prisma db push
-```
+2. *Setup .env File:*
+   - Create a `.env` file in the root directory and populate it with the necessary environment variables provided in the documentation.
 
+3. *Connect to PlanetScale and Push Prisma:*
+   
+   npx prisma generate
+   npx prisma db push
+   
 
-### Start the app
+4. *Start the App:*
+   
+   npm run dev
+   
 
-```shell
-npm run dev
-```
+## Available Commands
 
-## Available commands
+You can run the following commands using npm:
 
-Running commands with npm `npm run [command]`
+- *Start Development Server:*
+  
+  npm run dev
+  
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+Feel free to explore, contribute, and enhance the AmazonGreen Admin Panel. Let's build a greener future together! 🌱🌎
